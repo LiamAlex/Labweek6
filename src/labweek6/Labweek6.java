@@ -52,7 +52,7 @@ public class Labweek6 {
         int x=1;
         Scanner keyboard = new Scanner(System.in);
         while(x !=10){
-            System.out.printf("plese enter a nuymber: ");
+            System.out.printf("plese enter a number: ");
             x=keyboard.nextInt();
         }
         
@@ -60,27 +60,40 @@ public class Labweek6 {
          * 5.  Using a do...while loop, ask the user to enter a number, continue
          *     asking for a number until the user enters the number 15
          */
-        
+        int a=1;
+        do{
+            System.out.printf("plese enter a number: ");
+            a=keyboard.nextInt();
+        } while (a !=15);
         
         /**
          * 6.  Using a for loop, display the numbers 1-100 on the screen
          */
-        
+        for(int d=1;d<=100;d++ ){
+            System.out.printf("%d%n", d);
+        }
 
         /**
          * 7.  Using a for loop, display the numbers 2-100 on the screen, going up in steps of 2
          */
-        
+        for(int s=2;s<=100;s+=2 ){
+            System.out.printf("%d%n", s);
+        }
         
         /**
          * 8.  Using a for loop, display the numbers 100-0 on the screen, going down in steps of 1
          */
+        for(int e=100;e>=1;e-- ){
+            System.out.printf("%d%n", e);
+        }
 
         
         /**
          * 9.  Using a for loop, display the numbers 100-0 on the screen, going down in steps of 5
          */
-        
+        for(int g=100;g>=0;g-=5 ){
+            System.out.printf("%d%n", g);
+        }
         
         /**
          * 10. Using the loop style of your choice, write a program that will display the numbers 1-100, where each
@@ -90,6 +103,21 @@ public class Labweek6 {
          *     ->If the number displayed is divisible by 9, write your last name
          *     ->If the number displayed is divisble by both 4 & 9, write your first name a space and then your last name.
          */
+        for(int ax=1;ax<=100;ax++ ){
+            if( ax%4==0 && ax%9==0){
+                System.out.printf("%d Liam Daley%n", ax);
+            }
+            
+            else if(ax%4==0){
+              System.out.printf("%d Liam%n", ax);
+            }
+            else if(ax%9==0){
+                System.out.printf("%d Daley%n", ax);
+            }
+            else{
+                System.out.printf("%d%n", ax);
+            }
+        }
     }
     
 }
